@@ -210,7 +210,7 @@ def getIMG():
 
             print(f'name: {likelyPoke}, image: {imageForlikelyPoke}, id: {likelyId}')
             try:
-                headers = {'X-Api-Key': '273629e6-4fc2-4777-8466-eeaae2157149'}
+                headers = {'X-Api-Key': 'apiKeyGoesHere'}
                 urlWithId = 'https://api.pokemontcg.io/v2/cards/' + likelyId
                 pokePriceresponse = requests.get(urlWithId, headers=headers)
                 pokemonPriceData = pokePriceresponse.json()['data']['tcgplayer']
