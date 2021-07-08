@@ -11,8 +11,7 @@ import requests
 
 def flattener(image, pts, w, h):
     """Flattens an image of a card into a top-down 200x300 perspective.
-    Returns the flattened, re-sized, grayed image.
-    See www.pyimagesearch.com/2014/08/25/4-point-opencv-getperspective-transform-example/"""
+    Returns the flattened, re-sized, grayed image."""
     temp_rect = np.zeros((4, 2), dtype="float32")
 
     s = np.sum(pts, axis=2)
